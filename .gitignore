@@ -1,0 +1,4 @@
+# /いらないフォルダ/
+/main_app/__pycache__/
+/craftQuest/__pycache__/
+/cqvenv/
