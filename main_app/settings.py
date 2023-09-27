@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import dj_database_url
+# import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'main_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 default_dburl = "sqlite:///" + str(BASE_DIR / "db.sqlite3")
-DATABASES = {'default': dj_database_url.config(default=default_dburl)}
+# DATABASES = {'default': dj_database_url.config(default=default_dburl)}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -127,8 +127,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # 以下を追加
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-dotenv.load_dotenv() # .env ファイルを読み込む
-SECRET_KEY = os.getenv('SECREST_KEY') # .env内の環境変数を取得
-SUPERUSER_NAME = os.getenv('SUPERUSER_NAME')
-SUPERUSER_EMAIL = os.getenv('SUPERUSER_EMAIL')
-SUPERUSER_PASSWORD = os.getenv('SUPERUSER_PASSWORD')
+# dotenv.load_dotenv() # .env ファイルを読み込む
+# SECRET_KEY = os.getenv('SECREST_KEY') # .env内の環境変数を取得
+# SUPERUSER_NAME = os.getenv('SUPERUSER_NAME')
+# SUPERUSER_EMAIL = os.getenv('SUPERUSER_EMAIL')
+# SUPERUSER_PASSWORD = os.getenv('SUPERUSER_PASSWORD')
